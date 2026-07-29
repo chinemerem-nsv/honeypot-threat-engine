@@ -1,0 +1,18 @@
+title: High Frequency SSH Authentication Failures
+id: d41d8cd9-8f00-4204-8099-8cb9f85c3e16
+status: experimental
+description: Detects repeated SSH authentication failures indicative of brute-force activity from honeypot telemetry.
+author: SOC Intern
+references:
+  - Internal Honeypot Session Analysis
+logsource:
+  product: tpot
+  service: cowrie
+detection:
+  selection:
+    action: auth_fail
+    protocol: ssh
+  condition: selection | count(src) by src > 5
+falsepositives:
+  - Authorized vulnerability scanners or administrative testing.
+level: high

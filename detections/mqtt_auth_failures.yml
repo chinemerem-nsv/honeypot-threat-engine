@@ -1,0 +1,18 @@
+title: High Frequency MQTT Authentication Failures
+id: b72e9df2-3f11-4a11-8199-9cb9f85c3e27
+status: experimental
+description: Detects repeated MQTT authentication failures indicating credential guessing or automated botnet attacks against IoT entry points.
+author: SOC Intern
+references:
+  - Internal Honeypot Session Analysis
+logsource:
+  product: tpot
+  service: mosquitto
+detection:
+  selection:
+    action: auth_fail
+    protocol: mqtt
+  condition: selection | count(source_ip) by source_ip > 3
+falsepositives:
+  - Misconfigured legitimate IoT sensors or automated home automation devices.
+level: medium
