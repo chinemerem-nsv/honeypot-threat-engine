@@ -1,4 +1,4 @@
-# Advanced Project 2 Integrity Attestation
+Advanced Project 2 Integrity Attestation
 
 Intern code: UBI-2026-0444  
 Variant: D2  
