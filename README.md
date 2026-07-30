@@ -39,7 +39,10 @@ python analysis-pipeline/quarantine_filter.py
 # 3. Perform macro baseline profiling and evaluate Sigma detection rules
 python analysis-pipeline/analyze_traffic.py
 
-# 4. Generate final cryptographic verification ledgers, evidence indices, and assessment manifests
+# 4. Export threat indicators and behavior clusters into standardized STIX format
+python analysis-pipeline/export_stix.py
+
+# 5. Generate final cryptographic verification ledgers, evidence indices, and assessment manifests
 python analysis-pipeline/build_and_verify.py
 ```
 
