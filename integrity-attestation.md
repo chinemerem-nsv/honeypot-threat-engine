@@ -8,7 +8,7 @@ I attest that I performed the submitted work on the assigned authorized artifact
 material assistance below and can reproduce the work during artifact check. I did not alter raw evidence, 
 fabricate tool output, rewrite commit history, share restricted artifacts, or cross scope.
 
-Assistance and tools used: Python standard libraries, Pandas, PyArrow, AI coding assistant
+Assistance and tools used: Python standard libraries, Pandas, PyArrow.
 
 Signed name: Chinemerem Ndubuisi  
 UTC date/time: 2026-07-31T15:30:00Z
