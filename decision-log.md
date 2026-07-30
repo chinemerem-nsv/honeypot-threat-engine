@@ -42,7 +42,7 @@ D-003
 
 UTC Time: 2026-07-29 09:45:00 UTC
 
-Decision: Implement `.gitkeep` placeholder files inside `raw-export/` and `quarantine/` directory structures.
+Decision: Implement .gitkeep placeholder files inside raw-export/ directory structures.
 
 Evidence Used: Git behavior ignoring empty directory trees upon repository cloning.
 
@@ -60,7 +60,7 @@ D-004
 
 UTC Time: 2026-07-29 16:00:00 UTC
 
-Decision: Implement modular STIX 2.1 threat intelligence export via `export_stix.py`.
+Decision: Implement modular STIX 2.1 threat intelligence export via export_stix.py.
 
 Evidence Used: Standardized threat interoperability and SOC framework requirements.
 
