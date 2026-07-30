@@ -1,18 +1,21 @@
 # Honeypot Threat Engine & SOC Telemetry Analysis Pipeline
 
 ## Project Overview
-The **Honeypot Threat Engine** is an advanced security operations center (SOC) telemetry analysis and ingestion platform. This project ingests raw honeypot replay streams, normalizes and sessionizes event data using high-performance embedded SQL engines (DuckDB), executes dynamic threat quarantine workflows, and applies modular Sigma detection rules to map behavioral attack clusters. 
+
+The **Honeypot Threat Engine** is an advanced security operations center (SOC) telemetry analysis and ingestion platform. This project ingests raw honeypot replay streams, normalizes and sessionizes event data using high-performance embedded SQL engines (DuckDB), executes dynamic threat quarantine workflows, and applies modular Sigma detection rules to map behavioral attack clusters.
 
 The pipeline enforces rigorous cryptographic verification, maintaining full data integrity through automated hashing ledgers, evidence indexing, and compliance attestation records.
 
 ---
 
 ## Repository Information
+
 * **Repository URL:** `https://github.com/chinemerem-nsv/honeypot-threat-engine`
 
 ---
 
 ## Core Architecture & Directory Layout
+
 * `analysis-pipeline/` — Contains core processing, normalization, quarantine filtering, analysis, and verification scripts.
 * `sensor-infrastructure/` — Infrastructure deployment templates, Ansible configuration, and boundary capture scripts.
 * `detections/` — Modular Sigma YAML detection rules for threat behavioral identification.
@@ -23,6 +26,7 @@ The pipeline enforces rigorous cryptographic verification, maintaining full data
 ---
 
 ## Clean-Build & Reproduction Instructions
+
 To perform a complete clean build, execute the pipeline scripts sequentially from the project root directory:
 
 ```bash
@@ -37,3 +41,8 @@ python analysis-pipeline/analyze_traffic.py
 
 # 4. Generate final cryptographic verification ledgers, evidence indices, and assessment manifests
 python analysis-pipeline/build_and_verify.py
+```
+
+## Deliverables & Artifact Generation
+
+Running the clean-build pipeline commands above will dynamically generate all required derived outputs, analysis clusters, cryptographic hashes, and compliance ledgers (the 16 submission deliverables) from the immutable raw event stream. All final deliverables are also packaged directly within the official Stage 6 submission container.
