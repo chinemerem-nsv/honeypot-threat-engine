@@ -20,17 +20,17 @@ https://github.com/chinemerem-nsv/honeypot-threat-engine
 
 Core Architecture & Directory Layout
 
-analysis-pipeline/ — Contains core processing, normalization, quarantine filtering, analysis, and verification scripts.
+1. analysis-pipeline/ — Contains core processing, normalization, quarantine filtering, analysis, and verification scripts.
 
-sensor-infrastructure/ — Infrastructure deployment templates, Ansible configuration, and boundary capture scripts.
+2. sensor-infrastructure/ — Infrastructure deployment templates, Ansible configuration, and boundary capture scripts.
 
-detections/ — Modular Sigma YAML detection rules for threat behavioral identification.
+3. detections/ — Modular Sigma YAML detection rules for threat behavioral identification.
 
-tests/ — Automated test suites and fixtures validating pipeline stability.
+4. tests/ — Automated test suites and fixtures validating pipeline stability.
 
-raw-export/ — Native immutable raw honeypot replay datasets (honeypot-replay.jsonl).
+5. raw-export/ — Native immutable raw honeypot replay datasets (honeypot-replay.jsonl).
 
-quarantine/ — Isolated high-volume and suspicious traffic partitions (flagged_sessions.parquet).
+6. quarantine/ — Isolated high-volume and suspicious traffic partitions (flagged_sessions.parquet).
 
 ---
 
